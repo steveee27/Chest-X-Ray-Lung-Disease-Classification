@@ -102,7 +102,7 @@ This is a proof of concept (POC) based on the published paper, which can be acce
 1. Visit the home page and click the "Click here to upload your image" link to navigate to the upload page.
    ![Screenshot 2025-04-04 224645](https://github.com/user-attachments/assets/0e7e85d5-4868-4146-ac49-452af9d7f26a)
 
-2. Upload one or more chest X-ray images by selecting the files.
+2. Upload one or more chest X-ray images by selecting the files, then click the "Upload" button.
    ![Screenshot 2025-04-04 224737](https://github.com/user-attachments/assets/69d5a12c-58ed-4d75-80b8-bc09bc966093)
      
 3. After the files are uploaded, predictions will be displayed along with Grad-CAM visualizations.
