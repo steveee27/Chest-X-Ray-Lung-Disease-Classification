@@ -1,4 +1,4 @@
-# Chest X-Ray Lung Disease Prediction with Grad-CAM Visualization
+# Chest X-Ray Lung Disease Prediction
 
 ### Introduction
 This project is a Flask-based web application that allows users to upload chest X-ray images for classification into 15 distinct lung diseases. The application uses deep learning models for classification and provides visual explanations of the model's decision-making process using Grad-CAM (Gradient-weighted Class Activation Mapping). The app is built for ease of use, with a simple interface for uploading images and generating classification reports in PDF format.
