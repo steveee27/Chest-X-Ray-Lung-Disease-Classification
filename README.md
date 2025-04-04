@@ -100,16 +100,16 @@ This is a proof of concept (POC) based on the published paper, which can be acce
 
 ### How to Use
 1. Visit the home page and click the "Click here to upload your image" link to navigate to the upload page.
-   - **![Screenshot 2025-04-04 224645](https://github.com/user-attachments/assets/0e7e85d5-4868-4146-ac49-452af9d7f26a)** 
+   ![Screenshot 2025-04-04 224645](https://github.com/user-attachments/assets/0e7e85d5-4868-4146-ac49-452af9d7f26a)
 
 2. Upload one or more chest X-ray images by selecting the files.
-   - **![Screenshot 2025-04-04 224737](https://github.com/user-attachments/assets/69d5a12c-58ed-4d75-80b8-bc09bc966093)**
+   ![Screenshot 2025-04-04 224737](https://github.com/user-attachments/assets/69d5a12c-58ed-4d75-80b8-bc09bc966093)
      
 3. After the files are uploaded, predictions will be displayed along with Grad-CAM visualizations.
-   - **![Screenshot 2025-04-04 224921](https://github.com/user-attachments/assets/f4bd853a-590e-4234-950b-d568c1d5aa52)
+   ![Screenshot 2025-04-04 224921](https://github.com/user-attachments/assets/f4bd853a-590e-4234-950b-d568c1d5aa52)
      
 4. You can download a PDF report containing the predictions and the Grad-CAM images.
-   - **![Screenshot 2025-04-04 230255](https://github.com/user-attachments/assets/92af1848-9f90-4a7c-8463-8eb933d1484c)**
+   ![Screenshot 2025-04-04 230255](https://github.com/user-attachments/assets/92af1848-9f90-4a7c-8463-8eb933d1484c)
      
 ### Directory Structure
 ```bash
