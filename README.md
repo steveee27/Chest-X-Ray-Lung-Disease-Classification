@@ -113,22 +113,24 @@ This is a proof of concept (POC) based on the published paper, which can be acce
      
 ### Directory Structure
 ```bash
-├── main.py               # Main Flask app
 ├── config/
-│   ├── config.py         # Configuration file for app
-│   └── train-config.yaml # Model and dataset configuration
-├── static/
-│   ├── uploads/          # Folder for uploaded images
-│   └── style_home.css    # Home page CSS
-│   └── style_upload.css  # Upload page CSS
-├── templates/
-│   └── index.html        # Home page HTML
-│   └── upload.html       # Upload page HTML
+│   ├── config.py            # Configuration file for app
+│   └── train-config.yaml    # Model and dataset configuration
 ├── src/
-│   ├── inference.py      # Model inference and Grad-CAM functions
-│   ├── inputstream.py    # Input file validation functions
-│   ├── preprocessing.py  # Image preprocessing
-└── requirements.txt      # Python dependencies
+│   ├── inference.py         # Model inference and Grad-CAM functions
+│   ├── inputstream.py       # Input file validation functions
+│   ├── preprocessing.py     # Image preprocessing
+├── static/
+│   ├── uploads/             # Folder for uploaded images
+│   └── style_home.css       # Home page CSS
+│   └── style_upload.css     # Upload page CSS
+├── templates/
+│   └── index.html           # Home page HTML
+│   └── upload.html          # Upload page HTML
+└── LICENSE                  # Project license
+├── README.md                # Project description and instructions
+├── main.py                  # Main Flask app
+├── requirements.txt         # Python dependencies
 ```
 
 ### License
