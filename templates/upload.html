@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Image</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles_upload.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Upload Your Image</h1>
+        <form method="post" enctype="multipart/form-data">
+            <input type="file" name="file" multiple>
+            <input type="submit" value="Upload">
+        </form>
+
+        {% if error_message %}
+            <p class="error-message">{{ error_message }}</p>
+        {% endif %}
+        
+        {% if files_info %}
+        <h2>Image Results</h2>
+        <form method="post" action="/generate_pdf">
+            <table>
+                <thead>
+                    <tr>
+                        <th>No.</th>
+                        <th>Original Image</th>
+                        <th>File Name</th>
+                        <th>Predicted</th>
+                        <th>Grad-CAM</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for file_info in files_info %}
+                    <tr>
+                        <td>{{ loop.index }}</td>
+                        <td><img src="{{ url_for('static', filename='uploads/' + file_info['original_image']) }}" class="table-image"></td>
+                        <td>{{ file_info['original_image'] }}</td>
+                        <td>{{ file_info['prediction'] }}</td>
+                        <td><img src="{{ url_for('static', filename='uploads/' + file_info['gradcam_image']) }}" class="table-image"></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <input type="hidden" name="files_info" value='{{ files_info | tojson }}'>
+            <button type="submit">Save as PDF</button>
+        </form>
+        {% endif %}
+    </div>
+</body>
+</html>
